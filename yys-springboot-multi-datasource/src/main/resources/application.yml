@@ -1,0 +1,14 @@
+spring:
+  datasource:
+  ## 用户数据库
+    user:
+      jdbc-url: jdbc:mysql://127.0.0.1:3306/yys_user
+      username: root
+      password: 123456
+      driver-class-name: com.mysql.jdbc.Driver
+  ## 订单数据库
+    order:
+      jdbc-url: jdbc:mysql://127.0.0.1:3306/yys_order
+      username: root
+      password: 123456.
+      driver-class-name: com.mysql.jdbc.Driver
