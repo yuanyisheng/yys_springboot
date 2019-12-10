@@ -1,0 +1,26 @@
+spring:
+  http:
+    encoding:
+      force: true
+      # 模板引擎编码为UTF-8
+      charset: UTF-8
+  freemarker:
+    allow-request-override: false
+    cache: false
+    check-template-location: true
+    charset: UTF-8
+    content-type: text/html; charset=utf-8
+    expose-request-attributes: false
+    expose-session-attributes: false
+    expose-spring-macro-helpers: false
+    # 模板文件结尾.ftl
+    suffix: .ftl
+    # 模板文件目录
+    template-loader-path: classpath:/templates
+  datasource:
+    url: jdbc:mysql://47.93.99.210:3306/yys_springboot_jdbc
+    username: root
+    password: Yys0821.
+    driver-class-name: com.mysql.jdbc.Driver
+  mvc:   #静态文件
+    static-path-pattern : /static/**
